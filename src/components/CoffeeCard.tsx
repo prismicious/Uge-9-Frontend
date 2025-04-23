@@ -1,6 +1,8 @@
 import React from 'react';
 import {Coffee} from '../types/Coffee.ts'; // Adjust the path based on your file structure
 import './CoffeeCard.css'; // Add custom CSS if needed for additional styling
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 interface CoffeeCardProps {
     coffee: Coffee;
@@ -18,6 +20,9 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({coffee}) => {
             <p className="card-ingredients">
                 Ingredients: {coffee.ingredients.length > 0 ? coffee.ingredients.join(', ') : "Secret"}
             </p>
+            <button onClick={() => alert(`You ordered ${coffee.title}!`)}>
+              <FontAwesomeIcon icon={faShoppingCart} style={{ marginRight: "0.5rem" }} /> Add to Cart
+            </button>
         </div>
     );
 };

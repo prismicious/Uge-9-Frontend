@@ -82,3 +82,37 @@ div {
     height: 150px; /* Slightly smaller images for mobile */
   }
 }
+
+.card button {
+  background-color: #00704a; /* Green color */
+  color: #ffffff; /* White text color */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+/* Hover style for the button */
+.card button:hover {
+  background-color: #005a3a; /* Slightly darker green */
+  transform: scale(1.05); /* Slightly enlarge */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+/* Focus state for accessibility */
+.card button:focus {
+  outline: 2px solid #ffffff; /* White outline */
+  outline-offset: 2px;
+}
+
+/* Disable state for the button */
+.card button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
