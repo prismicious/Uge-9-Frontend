@@ -1,0 +1,115 @@
+/* Wine cards container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 24px; /* Spacing between cards */
+  padding: 16px; /* Padding inside the container */
+  max-width: 1200px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Wine controls container */
+.wine-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.slider-wrapper {
+  min-width: 220px;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.filter-count {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 8px;
+  margin-right: 8px;
+  opacity: 0.85;
+  white-space: nowrap;
+  margin-bottom: 16px;
+  display: block;
+  font-style: italic;
+}
+
+.slider-label {
+  color: #fff;
+  font-size: 1rem;
+  min-width: 70px;
+  text-align: right;
+}
+
+.slider {
+  width: 100%;
+  max-width: 200px;
+}
+
+.toggle-button,
+.wine-type-selector {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-button:hover,
+.wine-type-selector:hover {
+  background-color: #555;
+}
+
+/* Filter container */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.filter-dropdown,
+.filter-input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #444;
+  color: white;
+}
+
+.filter-input {
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Status messages */
+.status-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.error-message {
+  color: red;
+}

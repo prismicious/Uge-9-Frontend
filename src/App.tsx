@@ -1,11 +1,11 @@
 import './App.css'
-import DisplayCoffee from "./components/DisplayCoffee.tsx";
+import DisplayWine from "./components/DisplayWine.tsx";
 
 function App() {
     return (
         <>
-            <h1>Coffee</h1>
-            <DisplayCoffee/>
+            <h1>🍷Wine</h1>
+            <DisplayWine/>
         </>
     )
 }

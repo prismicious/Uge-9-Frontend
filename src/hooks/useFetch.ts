@@ -22,6 +22,7 @@ function useFetch<T>(url: string) {
 
         const result = await response.json();
         setData(result);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
         setError(err.message || 'Something went wrong.');
       } finally {
