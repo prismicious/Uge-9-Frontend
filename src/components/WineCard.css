@@ -22,17 +22,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: var(--shadow-default);
+    box-shadow: 0 6px 24px rgba(138, 59, 92, 0.1), 0 1.5px 8px rgba(0,0,0,0.6);
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     color: white;
-    transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
     transform-style: preserve-3d;
   }
   
   .card:hover {
-    transform: perspective(600px) translateZ(10px) scale(1.04);
-    box-shadow: var(--shadow-hover);
+    transform: perspective(600px) translateZ(10px) scale(1.02);
+    border: 2px solid rgba(184, 58, 122, 0.9); /* more visible, semi-transparent on hover */
+    box-shadow: 0 12px 32px 0 rgba(184, 58, 122, 0.4), 0 4px 24px rgba(0,0,0,0.5);
+  
   }
   
   .card-fill-layer {

@@ -169,7 +169,7 @@ const DisplayWines: React.FC = () => {
         Showing {displayData.length} wine{displayData.length === 1 ? "" : "s"}
       </span>
       <div className="wine-controls">
-        <button onClick={toggleWineView} className="toggle-button">
+        <button onClick={toggleWineView} className="toggle-button effects">
           {showAllWines ? "Show Specific Wine Type" : "Show All Wines"}
         </button>
 
@@ -177,7 +177,7 @@ const DisplayWines: React.FC = () => {
           <select
             value={wineType}
             onChange={(e) => changeWineType(e.target.value as WineEndpoints)}
-            className="wine-type-selector"
+            className="wine-type-selector effects"
           >
             {Object.entries(WineEndpoints).map(([key, value]) => (
               <option key={key} value={value}>
@@ -191,7 +191,7 @@ const DisplayWines: React.FC = () => {
         <select
           value={filterCriteria}
           onChange={(e) => setFilterCriteria(e.target.value)}
-          className="filter-dropdown"
+          className="filter-dropdown effects"
         >
           {filterOptions.map((option) => (
             <option key={option.value} value={option.value}>
@@ -205,7 +205,7 @@ const DisplayWines: React.FC = () => {
           value={filterValue}
           onChange={(e) => setFilterValue(e.target.value)}
           placeholder={`Enter filter value for ${filterCriteria}...`}
-          className="filter-input"
+          className="filter-input effects"
         />
       </div>
       <div className="cards-container">

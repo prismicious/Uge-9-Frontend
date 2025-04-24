@@ -56,7 +56,27 @@ h1 {
   border-radius: 8px; /* Align rounded corners, if needed */
 }
 
+h1, h2, h3, .wine-type-selector, .toggle-button, .filter-dropdown, .filter-input {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+}
 
+body, .card-title, .card-details, .filter-count {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+
+body {
+  background: 
+    linear-gradient(rgba(38, 36, 43, 0.85), rgba(138, 59, 92, 0.85)),
+    url('https://images.pexels.com/photos/1277181/pexels-photo-1277181.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
 .read-the-docs {
   color: #888;
+}
+
+:root {
+
 }
