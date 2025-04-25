@@ -1,5 +1,3 @@
-/* Wine Card Styles with Glassmorphism, Refined Hover, and Polished Details */
-
 :root {
     --card-border: 1px solid rgba(255, 255, 255, 0.1);
     --card-radius: 16px;
@@ -89,7 +87,7 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     
     /* Transparent black border */
-    border: 2px solid rgba(0, 0, 0, 0.2); /* Black with 30% opacity */
+    border: 2px solid rgba(0, 0, 0, 0.2); 
   }
   
   

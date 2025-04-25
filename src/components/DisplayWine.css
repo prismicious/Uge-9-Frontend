@@ -118,7 +118,6 @@
   color: #fff;         /* white text */
 }
 
-/* Optional: highlight the selected option with your wine color */
 .wine-type-selector option:checked,
 .filter-dropdown option:checked {
   background: rgb(184, 58, 122);
