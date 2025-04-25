@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Wine } from "..
-/types/Wine";
+import { Wine } from "../types/Wine";
 import { WineEndpoints, endpointToDisplayName } from "../types/enums";
 import useFetch from "./useFetch";
 
