@@ -2,8 +2,6 @@
 
 A modern web application for browsing and exploring various types of wines from around the world.
 
-![Wine App Screenshot](https://via.placeholder.com/900x450?text=Wine+App+Screenshot)
-
 ## 📋 Overview
 
 Wine Showcase is a React application that fetches and displays wine data from the SampleAPIs collection. Users can browse wines by category, search using different criteria, and view detailed information about each wine.
