@@ -6,6 +6,8 @@ A modern web application for browsing and exploring various types of wines from 
 
 Wine Showcase is a React application that fetches and displays wine data from the SampleAPIs collection. Users can browse wines by category, search using different criteria, and view detailed information about each wine.
 
+**[View Live Demo](https://prismicious.github.io/Uge-9-Frontend/)** ✨
+
 ## ✨ Features
 
 - **Browse by Wine Type**: Filter wines by Red, White, Rosé, Sparkling, Dessert, or Port
